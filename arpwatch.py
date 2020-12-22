@@ -35,6 +35,6 @@ while True:
       mac = value['target_mac']
       mac = EUI(':'.join(['%2.2x' % i for i in mac]))
       ktime = value['observed_ktime']
-      print('%16.16s %24.24s %10.1f sec' % (ip, mac, (now - ktime) / 1e9))
+      print('%32.32s %24.24s %10.1f sec' % (ip, mac, (now - ktime) / 1e9))
   time.sleep(1)
 
